@@ -13,15 +13,6 @@ public class MainGestorFestival {
 		a1.setNombreGrupo("ac-dc");
 		a1.setDuracion(90);
 		
-		//crear una actuacion con inputs del teclado
-		Scanner scan = new Scanner(System.in);
-		Actuacion a2 = new Actuacion();
-		
-		System.out.println("Introduce un nombre de grupo");
-		a2.setNombreGrupo(scan.nextLine());
-		
-		System.out.println("Introduce una duracion de actuacion");
-		a2.setDuracion(Integer.parseInt(scan.nextLine()));
 		
 		//crear una actuacion leyendo desde fichero
 		File file = new File("D:/ficherosjava/actuaciones.txt");
@@ -47,7 +38,6 @@ public class MainGestorFestival {
 		
 		ArrayList<Actuacion> actuaciones = new ArrayList<Actuacion>();
 		actuaciones.add(a1);
-		actuaciones.add(a2);
 		actuaciones.add(a3);
 		
 		festival.setActuaciones(actuaciones);
@@ -62,7 +52,35 @@ public class MainGestorFestival {
 		
 		festival.mostrarInfo();
 		
+		festival.addActuacion("berri txarrak", 32);
 
+
+
+		festival.mostrarInfo();
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 	}
 
 }
