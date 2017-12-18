@@ -60,6 +60,8 @@ public class MainGestorFestival {
 		
 		festival.addActuacion("Linkin Park", 95);
 		
+		festival.addActuacion("El reno renardo", 100);
+		
 		festival.mostrarInfo();
 		
 
