@@ -76,11 +76,6 @@ public class Festival {
 		this.actuaciones.add(a);
 	}
 	
-	/**
-	 * 
-	 * @param nombre nombre del grupo
-	 * @param duracion duracion de la actuacion
-	 */
 	public void addActuacion(String nombre, int duracion){
 		Actuacion a = new Actuacion();
 		a.setNombreGrupo(nombre);
@@ -89,11 +84,6 @@ public class Festival {
 		this.actuaciones.add(a);
 	}
 	
-	
-	/**
-	 * Muestra la informacion del festival en pantalla
-	 * Muestra todas la actuaciones en pantalla
-	 */
 	public void mostrarInfo(){
 		System.out.println(getNombre());
 		System.out.println("Patrocidado por " + getPatrocinador());
